@@ -9,8 +9,7 @@ using namespace std;
 
 int Factorial(int n)
 {
-	if (n == 0) return 1;
-	else return n * Factorial(n - 1);
+	return n == 0 ? 1 : n * Factorial(n - 1);
 }
 
 int main()
@@ -27,7 +26,10 @@ int main()
 
 #ifdef POW
 
-int POWER(int n, int step);
+int POWER(int n, int step)
+{
+	return step == 0 ? 1 : n * POWER(n, step - 1);
+}
 
 int main()
 {
@@ -39,13 +41,5 @@ int main()
 	cout << n << "^" << step << " = " << result;
 	return 0;
 }
-
-int POWER(int n, int step)
-{
-	if (step != 0)
-		return (n * POWER(n, step - 1));
-  else return 1;
-}
- 
-#endif //POW
+ #endif //POW
 
