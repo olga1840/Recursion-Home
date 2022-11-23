@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 
@@ -17,8 +17,8 @@ int main()
 {	
 	setlocale(LC_ALL, "");
 	int n;
-	cout << "Ââåäèòå ÷èñëî: "; cin >> n;
-	cout << "Ôàêòîðèàë ÷èñëà ðàâåí: " << Factorial(n);
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> n;
+	cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð° Ñ€Ð°Ð²ÐµÐ½: " << Factorial(n);
 	return 0;
 }
 
@@ -33,8 +33,8 @@ int main()
 {
 	setlocale(LC_ALL, "");
 	int n, step, result;
-	cout << "Âåäèòå ÷èñëî îñíîâàíèå ñòåïåíè: "; cin >> n;
-	cout << "Ââåäèòå ÷èñëî ïîêàçàòåëü ñòåïåíè: "; cin >> step;
+	cout << "Ð’ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ ÑÑ‚ÐµÐ¿ÐµÐ½Ð¸: "; cin >> step;
 	result = POWER(n, step);
 	cout << n << "^" << step << " = " << result;
 	return 0;
